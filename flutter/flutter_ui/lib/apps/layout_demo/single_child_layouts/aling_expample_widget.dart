@@ -11,9 +11,9 @@ class AlignExpampleWidget extends StatelessWidget {
         width: 300,
         child: Container(
           color: Colors.red,
-          child: Align(
-            child: Text("Hello world"),
+          child: const Align(
             alignment: Alignment(0.5, 0.5),
+            child: Text("Hello world"),
           ),
         ),
       ),
