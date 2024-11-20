@@ -11,19 +11,19 @@ class ScaffoldComponent extends StatelessWidget {
         height: double.infinity,
         color: Colors.green,
         alignment: Alignment.center,
-        child: Text("Hello world!"),
+        child: const Text("Hello world!"),
       ),
       appBar: AppBar(
         title: const Text("Scaffold"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.alarm),
+        child: const Icon(Icons.alarm),
       ),
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterFloat,
       bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
+        shape: const CircularNotchedRectangle(),
         child: Container(
           height: 50,
           color: Colors.red,

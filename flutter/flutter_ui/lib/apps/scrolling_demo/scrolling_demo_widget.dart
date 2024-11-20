@@ -4,7 +4,7 @@ class ScrollingDemoWidget extends StatelessWidget {
   const ScrollingDemoWidget({super.key});
 
   Widget _buildItem() {
-    return ListTile(
+    return const ListTile(
       leading: Icon(Icons.person),
       title: Text("Alex"),
       subtitle: Text("24/02/1999"),
@@ -35,6 +35,5 @@ class ScrollingDemoWidget extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

@@ -7,7 +7,7 @@ class ElevatedButtonComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("appBar"),
+        title: const Text("appBar"),
       ),
       body: _buildBody(context),
     );
@@ -15,7 +15,7 @@ class ElevatedButtonComponent extends StatelessWidget {
 
   Widget _buildBody(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
-      textStyle: TextStyle(fontSize: 20),
+      textStyle: const TextStyle(fontSize: 20),
     );
 
     return Center(
@@ -32,17 +32,17 @@ class ElevatedButtonComponent extends StatelessWidget {
             onLongPress: () {
               print("Loooong press");
             },
-            child: Text('Pressed me'),
+            child: const Text('Pressed me'),
           ),
           ElevatedButton(
             onPressed: null,
-            child: Text('Disabled button'),
             style: style,
+            child: const Text('Disabled button'),
           ),
           ElevatedButton(
             onPressed: () {},
             style: style,
-            child: Text('Enabled button'),
+            child: const Text('Enabled button'),
           )
         ],
       ),
