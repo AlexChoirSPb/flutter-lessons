@@ -10,12 +10,12 @@ class AppbarComponent extends StatelessWidget {
       shadowColor: Theme.of(context).colorScheme.shadow,
       leading: IconButton(
         onPressed: () {},
-        icon: Icon(Icons.close),
+        icon: const Icon(Icons.close),
         tooltip: "Close",
       ),
       actions: [
-        IconButton(onPressed: () {}, icon: Icon(Icons.add_alert)),
-        IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.add_alert)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
       ],
     );
   }
