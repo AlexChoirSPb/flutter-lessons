@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class SnackBarComponent extends StatelessWidget {
@@ -13,7 +15,7 @@ class SnackBarComponent extends StatelessWidget {
               const snackBar = SnackBar(content: Text("SnackBar v1"));
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
-            child: Text("Click me!"),
+            child: const Text("Click me!"),
           ),
         ),
         const SizedBox(
@@ -23,7 +25,7 @@ class SnackBarComponent extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               final snackBar = SnackBar(
-                content: Text("SnackBar v2"),
+                content: const Text("SnackBar v2"),
                 action: SnackBarAction(
                   label: 'Close',
                   onPressed: () {
@@ -33,7 +35,7 @@ class SnackBarComponent extends StatelessWidget {
               );
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
-            child: Text("Click me!"),
+            child: const Text("Click me!"),
           ),
         ),
         const SizedBox(
@@ -43,7 +45,7 @@ class SnackBarComponent extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               final snackBar = SnackBar(
-                content: Text("SnackBar v3"),
+                content: const Text("SnackBar v3"),
                 behavior: SnackBarBehavior.floating,
                 dismissDirection: DismissDirection.up,
                 showCloseIcon: true,
@@ -56,7 +58,7 @@ class SnackBarComponent extends StatelessWidget {
               );
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
-            child: Text("Click me!"),
+            child: const Text("Click me!"),
           ),
         ),
       ],

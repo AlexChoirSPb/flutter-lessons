@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class FormComponent extends StatefulWidget {
@@ -23,7 +25,7 @@ class _FormComponentState extends State<FormComponent> {
               hintText: "UserName",
             ),
             onChanged: (value) {
-              print("$value");
+              print(value);
             },
             validator: (value) {
               if (value == null || value.isEmpty) {
@@ -42,7 +44,7 @@ class _FormComponentState extends State<FormComponent> {
               hintText: "Email",
             ),
             onChanged: (value) {
-              print("$value");
+              print(value);
             },
             validator: (value) {
               if (value == null || value.isEmpty) {
@@ -58,7 +60,7 @@ class _FormComponentState extends State<FormComponent> {
             },
           ),
           Container(
-            padding: EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.symmetric(vertical: 16),
             alignment: Alignment.center,
             child: ElevatedButton(
                 onPressed: () {
@@ -70,7 +72,7 @@ class _FormComponentState extends State<FormComponent> {
                     );
                   }
                 },
-                child: Text("Send form")),
+                child: const Text("Send form")),
           )
         ],
       ),

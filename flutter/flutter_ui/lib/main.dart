@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/apps/calculator_app/calculator_app_screen.dart';
-import 'package:flutter_ui/apps/calculator_app/compinents/theme.dart';
-import 'package:flutter_ui/apps/events_demo/events_demo_widget.dart';
-import 'package:flutter_ui/apps/form_demo/form_demo_widget.dart';
-import 'package:flutter_ui/apps/navigation_demo/navigation_demo_widget.dart';
+import 'package:flutter_ui/apps/app_state_demo/app_state_demo_widget.dart';
+// import 'package:flutter_ui/apps/events_demo/events_demo_widget.dart';
+// import 'package:flutter_ui/apps/form_demo/form_demo_widget.dart';
+// import 'package:flutter_ui/apps/navigation_demo/navigation_demo_widget.dart';
+// import 'package:flutter_ui/apps/state_demo/state_demo_widget.dart';
 // import 'package:flutter_ui/apps/basic_widgets_demo/basic_widgets_demo_widget.dart';
 // import 'package:flutter_ui/apps/list_demo/list_demo_widget.dart';
 // import 'package:flutter_ui/apps/scrolling_demo/scrolling_demo_widget.dart';
 // import 'package:flutter_ui/apps/ui_base_demo/components/theme_widget.dart';
-import 'package:flutter_ui/apps/ui_base_demo/ui_base_demo_widget.dart';
+// import 'package:flutter_ui/apps/ui_base_demo/ui_base_demo_widget.dart';
 // import 'package:flutter_ui/apps/first_layout/first_layout_widget.dart';
 // import 'package:flutter_ui/apps/layout_demo/layout_demo_app.dart';
 
@@ -21,15 +21,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         title: 'Flutter Demo',
         // theme: ThemeWidget.customTheme(),
-        // theme: CustomTheme.customTheme(),
-        // theme: ThemeData(
-        //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        //   useMaterial3: true,
-        // ),
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
         // home: const LayoutDemoApp(),
-        home: CalculatorAppScreen());
+        home: const AppStateDemoWidget());
   }
 }

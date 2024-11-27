@@ -33,7 +33,7 @@ class _VideoComponentState extends State<VideoComponent> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Video player demo"),
+        title: const Text("Video player demo"),
         backgroundColor: Colors.blueAccent,
       ),
       body: FutureBuilder(
@@ -41,7 +41,7 @@ class _VideoComponentState extends State<VideoComponent> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               width: double.infinity,
               height: 300,
               child: VideoPlayer(_controller),

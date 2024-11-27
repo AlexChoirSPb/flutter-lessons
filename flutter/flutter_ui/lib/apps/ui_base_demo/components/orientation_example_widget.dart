@@ -4,13 +4,13 @@ class OrientationExampleWidget extends StatelessWidget {
   const OrientationExampleWidget({super.key});
 
   Widget _buildPortrait() {
-    return Center(
+    return const Center(
       child: Text("Portait"),
     );
   }
 
   Widget _buildLandscape() {
-    return Center(
+    return const Center(
       child: Text("Landscape"),
     );
   }

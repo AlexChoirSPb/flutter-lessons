@@ -5,7 +5,7 @@ class ColumnExampleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       verticalDirection: VerticalDirection.up,
       mainAxisSize: MainAxisSize.min,

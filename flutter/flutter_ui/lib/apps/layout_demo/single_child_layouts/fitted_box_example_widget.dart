@@ -9,7 +9,7 @@ class FittedBoxExampleWidget extends StatelessWidget {
       width: 400,
       height: 300,
       color: Colors.blue,
-      child: FittedBox(
+      child: const FittedBox(
         fit: BoxFit.contain,
         child: Placeholder(),
       ),

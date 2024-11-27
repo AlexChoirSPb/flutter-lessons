@@ -34,7 +34,7 @@ class ThemeWidget extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
           color: Theme.of(context).colorScheme.primary,
           child: Text(
             "Text with a background color",
@@ -51,7 +51,7 @@ class ThemeWidget extends StatelessWidget {
                 seedColor: Colors.pink, brightness: Brightness.dark)),
         child: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     );

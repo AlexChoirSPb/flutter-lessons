@@ -8,7 +8,7 @@ class ScreenMainComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Main Screen"),
+        title: const Text("Main Screen"),
       ),
       body: Center(
         child: ElevatedButton(
@@ -16,9 +16,9 @@ class ScreenMainComponent extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => ScreenSecondComponent()));
+                      builder: (context) => const ScreenSecondComponent()));
             },
-            child: Text("Go to second screen")),
+            child: const Text("Go to second screen")),
       ),
     );
   }
