@@ -15,14 +15,14 @@ class GridListWidget extends StatelessWidget {
             header: Container(
               height: 40,
               color: Colors.black38,
-              child: Center(
+              child: const Center(
                 child: Text("Jhon Snow"),
               ),
             ),
             footer: Container(
               height: 40,
               color: Colors.black38,
-              child: Center(
+              child: const Center(
                 child: Text("24/02/1999"),
               ),
             ),

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class GesturesComponent extends StatelessWidget {
@@ -8,10 +10,10 @@ class GesturesComponent extends StatelessWidget {
     return GestureDetector(
       child: Center(
         child: Container(
-          padding: EdgeInsets.all(32),
+          padding: const EdgeInsets.all(32),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12), color: Colors.blue),
-          child: Text(
+          child: const Text(
             'Gesture handler',
             style: TextStyle(fontSize: 32),
           ),

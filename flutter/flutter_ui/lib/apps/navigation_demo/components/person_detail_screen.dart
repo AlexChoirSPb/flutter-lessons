@@ -15,24 +15,24 @@ class PersonDetailScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.all(16),
-              child: Text("${person.firstName + "" + person.lastName}"),
+              padding: const EdgeInsets.all(16),
+              child: Text("${person.firstName} ${person.lastName}"),
             ),
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context, AddPersonToContact(true, person));
                   },
-                  child: Text('Add to Contact')),
+                  child: const Text('Add to Contact')),
             ),
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context, AddPersonToContact(false, person));
                   },
-                  child: Text('Remove of Contact')),
+                  child: const Text('Remove of Contact')),
             )
           ],
         ),

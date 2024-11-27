@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/apps/ui_base_demo/components/fonts_component.dart';
-import 'package:flutter_ui/apps/ui_base_demo/components/image_component.dart';
+// import 'package:flutter_ui/apps/ui_base_demo/components/fonts_component.dart';
+// import 'package:flutter_ui/apps/ui_base_demo/components/image_component.dart';
 import 'package:flutter_ui/apps/ui_base_demo/components/video_component.dart';
 // import 'package:flutter_ui/apps/ui_base_demo/components/orientation_example_widget.dart';
 // import 'package:flutter_ui/apps/ui_base_demo/components/orientation_widget.dart';
@@ -28,6 +28,6 @@ class UiBaseDemoWidget extends StatelessWidget {
     //   // body: const FontsComponent(),
     //   body: ImageComponent(),
     // );
-    return VideoComponent();
+    return const VideoComponent();
   }
 }

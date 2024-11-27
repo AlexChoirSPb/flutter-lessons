@@ -8,7 +8,7 @@ class SimpleListWidget extends StatelessWidget {
     return ListView(
       children: List.generate(
           100,
-          (index) => ListTile(
+          (index) => const ListTile(
                 title: Text("Alex"),
                 subtitle: Text("24/02/1999"),
                 trailing: Icon(Icons.delete),

@@ -8,7 +8,7 @@ class EventsDemoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Events Demo"),
+        title: const Text("Events Demo"),
         backgroundColor: Colors.blueAccent,
       ),
       body: const GesturesComponent(),

@@ -9,15 +9,15 @@ class StackExampleWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           alignment: Alignment.bottomCenter,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   colors: [Colors.red, Colors.blue, Colors.green],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter)),
         ),
-        ColumnExampleWidget()
+        const ColumnExampleWidget()
       ],
     );
   }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/apps/app_state_demo/app_state_demo_widget.dart';
 // import 'package:flutter_ui/apps/events_demo/events_demo_widget.dart';
 // import 'package:flutter_ui/apps/form_demo/form_demo_widget.dart';
-import 'package:flutter_ui/apps/navigation_demo/navigation_demo_widget.dart';
+// import 'package:flutter_ui/apps/navigation_demo/navigation_demo_widget.dart';
+// import 'package:flutter_ui/apps/state_demo/state_demo_widget.dart';
 // import 'package:flutter_ui/apps/basic_widgets_demo/basic_widgets_demo_widget.dart';
 // import 'package:flutter_ui/apps/list_demo/list_demo_widget.dart';
 // import 'package:flutter_ui/apps/scrolling_demo/scrolling_demo_widget.dart';
@@ -27,6 +29,6 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         // home: const LayoutDemoApp(),
-        home: const NavigationDemoWidget());
+        home: const AppStateDemoWidget());
   }
 }

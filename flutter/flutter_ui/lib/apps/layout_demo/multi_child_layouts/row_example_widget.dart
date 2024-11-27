@@ -10,7 +10,7 @@ class RowExampleWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       verticalDirection: VerticalDirection.up,
       children: [
-        Text("Lalalala"),
+        const Text("Lalalala"),
         Expanded(
           child: Container(
             color: Colors.red,

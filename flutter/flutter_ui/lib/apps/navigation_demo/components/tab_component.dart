@@ -12,8 +12,8 @@ class TabComponent extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Tabs demo"),
-            bottom: TabBar(tabs: [
+            title: const Text("Tabs demo"),
+            bottom: const TabBar(tabs: [
               Tab(
                 icon: Icon(Icons.directions),
                 text: "Simple List",

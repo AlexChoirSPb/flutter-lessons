@@ -17,14 +17,14 @@ class ListPersonComponent extends StatelessWidget {
     if (result == null) {
       ScaffoldMessenger.of(context)
         ..removeCurrentSnackBar()
-        ..showSnackBar(SnackBar(content: Text('Has no answer')));
+        ..showSnackBar(const SnackBar(content: Text('Has no answer')));
 
       return;
     }
 
     String message = '';
 
-    if (result!.needAdd) {
+    if (result.needAdd) {
       message = "Need add person to contact";
     } else {
       message = "Need remove person out of contact";
@@ -38,7 +38,7 @@ class ListPersonComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Persons list")),
+      appBar: AppBar(title: const Text("Persons list")),
       body: ListView.builder(
         itemCount: persons.length,
         itemBuilder: (context, index) => ListTile(
